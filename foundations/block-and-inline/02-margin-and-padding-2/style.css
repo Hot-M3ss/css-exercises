@@ -7,21 +7,40 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 8px; /* 10px 8px 8px */
 }
 
 .title {
   background: #e3f4ff;
+  padding: 8px; /* pixel value was off by +2 */
+  margin-bottom: 8px; /* pixel value was off by +2 */
+  font-size: 16px; /* from solution */
 }
 
 .content {
   background: #e3f4ff;
+  padding: 16px 8px; /* was 15px */
+  margin-bottom: 8px; /* pixel value was off by +2 */
 }
 
 .button-container {
   background: #e3f4ff;
+  /* removed margin: 16px auto; */
+  text-align: center;
+  padding: 8px;
 }
 
 button {
+  /*
+  Removed as this is unneccesary/
+  duplicated with incorrect value.
+  display: inline-block;
+  justify-self: center;
+  */
   background: white;
   border: 1px solid #eee;
+  display: block;
+  padding: 8px 24px; /* was 10px 20px */
+  /* added after viewing solution*/
+  margin: 0 auto;
 }
